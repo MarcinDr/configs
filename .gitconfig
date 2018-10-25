@@ -1,0 +1,28 @@
+[merge]
+	tool = kdiff3
+[diff]
+	guitool = kdiff3
+[core]
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+[user]
+	name = Marcin Druzgala
+	email = mdr@scalepoint.com
+[http]
+	sslCAInfo = C:/Users/mdr/AppData/Local/git/ca-bundle.crt
+	sslCAPath = C:/Users/mdr/
+[alias]
+	st = status
+	fp = fetch
+	cb = "!f() { git checkout -b \"$1\" ; }; f"
+	back = checkout -
+	qs = "!f() { git commit -am \"saving progress\" ; }; f"
+	cm = "!f() { git commit -am \"$1\" ; }; f"
+	lb = branch -vv
+	develop = checkout develop
+	master = checkout master
+[credential]
+	helper = wincred

@@ -10,10 +10,6 @@
 	path = C:/Program Files/KDiff3/kdiff3.exe
 [user]
 	name = Marcin Druzgala
-	email = mdr@scalepoint.com
-[http]
-	sslCAInfo = C:/Users/mdr/AppData/Local/git/ca-bundle.crt
-	sslCAPath = C:/Users/mdr/
 [alias]
 	st = status
 	fp = fetch

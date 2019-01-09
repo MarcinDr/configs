@@ -1,15 +1,11 @@
-[merge]
-	tool = kdiff3
-[diff]
-	guitool = kdiff3
 [core]
-	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
-[mergetool "kdiff3"]
-	path = C:/Program Files/KDiff3/kdiff3.exe
-[difftool "kdiff3"]
-	path = C:/Program Files/KDiff3/kdiff3.exe
+	editor = 'C:\\Users\\mdruzgala\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe' --wait
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
 [user]
-	name = Marcin Druzgala
 [alias]
 	st = status
 	fp = fetch
@@ -20,5 +16,11 @@
 	lb = branch -vv
 	develop = checkout develop
 	master = checkout master
-[credential]
-	helper = wincred
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
